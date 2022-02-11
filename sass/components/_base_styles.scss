@@ -29,10 +29,6 @@ svg {
   list-style: none;
 }
 
-.icon {
-  fill: currentColor;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -53,3 +49,36 @@ svg {
   margin-left: auto;
   margin-right: auto;
 }
+
+.current-page::after{
+  position: absolute;
+
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+.button{
+  min-width: 200px;
+  height: 50px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
+
+  background-color: $button-background-color;
+  color: $button-color;
+}
+
