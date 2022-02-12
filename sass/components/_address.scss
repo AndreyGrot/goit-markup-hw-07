@@ -1,0 +1,44 @@
+.adress__item {
+  min-width: 294px;
+}
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress__map {
+  margin-top: 0;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+.adress__nav {
+  color: $footer-nav-color;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+.nav:focus,
+.footer-list .nav:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}

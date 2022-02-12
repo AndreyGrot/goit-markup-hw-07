@@ -1,75 +1,71 @@
-.checkbox{
-    position: relative;
+.checkbox {
+  position: relative;
 
-    display: block;
+  display: block;
 
-    margin-left: 14px;
-    margin-right: auto;
-    padding-left: 23px;
-    margin-bottom: 30px;
+  cursor: pointer;
 
-    font-size: 14px;
-    line-height: 1.7;
+  margin-left: 14px;
+  margin-right: auto;
+  padding-left: 23px;
+  margin-bottom: 30px;
 
-    color: #757575;
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #757575;
 }
 
-.checkbox__input{
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+.checkbox__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-.checkbox__box{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.checkbox__box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 
-    display: inline-block;
+  display: inline-block;
 
-    width: 16px;
-    height: 15px;
+  width: 16px;
+  height: 15px;
 
-    border: 2px solid #000000;
-    border-radius: 2px;
+  border: 2px solid #000000;
+  border-radius: 2px;
 
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    background-color: inherit;
+  background-color: inherit;
 
-    transition: border-color 
-    $transition-duration
-    $transition-timing-function,
-    background-color
-    $transition-duration
-    $transition-timing-function,
-    box-shadow
-    $transition-duration
-    $transition-timing-function;
+  transition: border-color $transition-duration $transition-timing-function,
+    background-color $transition-duration $transition-timing-function,
+    box-shadow $transition-duration $transition-timing-function;
 
-    .checkbox__input:checked + &{
-        border-color: $accent-color;
-        background-color: $accent-color;
-        box-shadow: none;
-    
-        background-image: url('../images/modal-check.svg');
-        background-size: contain;
-        background-origin: border-box;
-    }
+  .checkbox__input:checked + & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    box-shadow: none;
+
+    background-image: url('../images/modal-check.svg');
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
-.checkbox__link{
-    font-size: 14px;
-    line-height: 1.7;
+.checkbox__link {
+  font-size: 14px;
+  line-height: 1.7;
 
-    color: $accent-color;
+  color: $accent-color;
 }
