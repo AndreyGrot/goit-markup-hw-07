@@ -1,15 +1,34 @@
-.adress__item {
-  min-width: 294px;
+.address {
+  display: inline-block;
+
+  width: 231px;
+
+  margin-right: 70px;
 }
-.adress__item:not(:last-child) {
+
+.adress__wrap {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address__list {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.adress__map {
+.address__map {
   margin-top: 0;
 
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;
 
   transition-property: color;
   transition-duration: $transition-duration;
@@ -22,7 +41,7 @@
   }
 }
 
-.adress__nav {
+.address__nav {
   color: $footer-nav-color;
   text-decoration: none;
 
@@ -35,10 +54,4 @@
     color: $accent-color;
     text-decoration: none;
   }
-}
-
-.nav:focus,
-.footer-list .nav:hover {
-  color: var(--accent-color);
-  text-decoration: none;
 }
